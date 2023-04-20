@@ -1,17 +1,11 @@
-<div align="center">
+## ⏱️ [set-timeout](https://npmjs.com/package/@rbxts/set-timeout)
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/littensy/set-timeout/ci.yml?branch=master&style=for-the-badge&logo=github)
 [![npm version](https://img.shields.io/npm/v/@rbxts/set-timeout.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@rbxts/set-timeout)
 [![npm downloads](https://img.shields.io/npm/dt/@rbxts/set-timeout.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@rbxts/set-timeout)
 [![GitHub license](https://img.shields.io/github/license/littensy/set-timeout?style=for-the-badge)](LICENSE.md)
 
-</div>
-
 ---
-
-&nbsp;
-
-## ⏱️ [set-timeout](https://npmjs.com/package/@rbxts/set-timeout)
 
 A simple implementation of `setTimeout` and `setInterval` for Roblox TypeScript.
 
@@ -60,6 +54,8 @@ promise.then(() => {
 
 // 3, 2, 1, Done!
 ```
+
+&nbsp;
 
 ## 📝 License
 
