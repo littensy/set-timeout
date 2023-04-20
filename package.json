@@ -1,0 +1,48 @@
+{
+	"name": "@rbxts/set-timeout",
+	"version": "1.0.0",
+	"description": "Functions for setTimeout and setInterval",
+	"main": "out/init.lua",
+	"scripts": {
+		"build": "rbxtsc",
+		"dev": "rbxtsc -w --type=game",
+		"prepublishOnly": "pnpm run build"
+	},
+	"keywords": [
+		"roact",
+		"roblox-ts",
+		"rbxts",
+		"hooked"
+	],
+	"author": "littensy",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/littensy/set-timeout.git"
+	},
+	"bugs": {
+		"url": "https://github.com/littensy/set-timeout/issues"
+	},
+	"types": "out/index.d.ts",
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "2.1.0-types.1",
+		"@rbxts/testez": "0.4.2-ts.0",
+		"@rbxts/types": "^1.0.677",
+		"@typescript-eslint/eslint-plugin": "^5.59.0",
+		"@typescript-eslint/parser": "^5.59.0",
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-roblox-ts": "^0.0.35",
+		"prettier": "^2.8.7",
+		"roblox-ts": "^2.1.0",
+		"typescript": "^5.0.4"
+	}
+}
