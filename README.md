@@ -5,8 +5,6 @@
 [![npm downloads](https://img.shields.io/npm/dt/@rbxts/set-timeout.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@rbxts/set-timeout)
 [![GitHub license](https://img.shields.io/github/license/littensy/set-timeout?style=for-the-badge)](LICENSE.md)
 
----
-
 A simple implementation of `setTimeout` and `setInterval` for Roblox TypeScript.
 
 &nbsp;
