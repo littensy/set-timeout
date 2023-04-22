@@ -12,14 +12,16 @@ export interface ThrottleOptions {
 }
 
 /**
- * Creates a throttled function that only invokes `callbaack` at most once per
+ * Creates a throttled function that only invokes `callback` at most once per
  * every `wait` seconds. The throttled function comes with a `cancel` method to
  * cancel delayed `callback` invocations and a `flush` method to immediately
- * invoke them. Provide `options` to indicate whether `callback` should be invoked
- * on the leading and/or trailing edge of the `wait` timeout. The `callback` is
- * invoked with the most recent arguments provided to the throttled function.
- * Subsequent calls to the throttled function return the result of the last
- * `callback` invocation.
+ * invoke them.
+ *
+ * Provide `options` to indicate whether `callback` should be invoked on the
+ * leading and/or trailing edge of the `wait` timeout. The `callback` is invoked
+ * with the most recent arguments provided to the throttled function. Subsequent
+ * calls to the throttled function return the result of the last `callback`
+ * invocation.
  *
  * **Note:** If `leading` and `trailing` options are `true`, `callback` is
  * invoked on the trailing edge of the timeout only if the throttled function

@@ -22,14 +22,15 @@ export type Debounced<T extends Callback> = T & {
 };
 
 /**
- * Creates a debounced function that delays invoking `func` until after `wait`
+ * Creates a debounced function that delays invoking `callback` until after `wait`
  * seconds have elapsed since the last time the debounced function was invoked.
  * The debounced function comes with a `cancel` method to cancel delayed
  * `callback` invocations and a `flush` method to immediately invoke them.
+ *
  * Provide `options` to indicate whether `callback` should be invoked on the
- * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
+ * leading and/or trailing edge of the `wait` timeout. The `callback` is invoked
  * with the last arguments provided to the debounced function. Subsequent calls
- * to the debounced function return the result of the last `func` invocation.
+ * to the debounced function return the result of the last `callback` invocation.
  *
  * **Note:** If `leading` and `trailing` options are `true`, `callback` is
  * invoked on the trailing edge of the timeout only if the debounced function
