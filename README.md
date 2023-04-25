@@ -63,6 +63,8 @@ promise.then(() => {
 
 Creates a throttled function that only invokes `callback` at most once per every `wait` seconds.
 
+By default, `leading` and `trailing` are both true.
+
 ```ts
 const throttled = throttle((value: number) => {
 	print(`Throttled: ${value}`);
@@ -76,11 +78,14 @@ for (const index of $range(0, 10)) {
 // Throttled: 0
 // Throttled: 4
 // Throttled: 8
+// Throttled: 10
 ```
 
 #### `debounce(callback, time, options)`
 
 Creates a debounced function that delays invoking `callback` until after `wait` seconds have elapsed since the last time the debounced function was invoked.
+
+By default, `leading` is false and `trailing` is true.
 
 ```ts
 const debounced = debounce((value: number) => {
